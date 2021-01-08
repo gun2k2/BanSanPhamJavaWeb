@@ -1,0 +1,284 @@
+@charset "UTF-8";
+/*============================================================================
+#Mixin
+==============================================================================*/
+/*============================================================================
+#Typography variables
+==============================================================================*/
+/*============================================================================
+#Variable
+==============================================================================*/
+/*============================================================================
+#Function
+==============================================================================*/
+/*Table*/
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  .table-responsive-block table, .table-responsive-block thead, .table-responsive-block tbody, .table-responsive-block th, .table-responsive-block td, .table-responsive-block tr {
+    display: block; }
+  .table-responsive-block thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px; }
+  .table-responsive-block tr {
+    background: #fff;
+    line-height: 20px;
+    margin-bottom: 20px;
+    border: #ebebeb 1px solid; }
+  .table-responsive-block td {
+    border: none;
+    position: relative;
+    padding-left: 40%;
+    text-align: right;
+    font-weight: 700; }
+    .table-responsive-block td.last {
+      padding: 0;
+      line-height: 50px; }
+      .table-responsive-block td.last a {
+        color: #0fb2ef; }
+  .table-responsive-block td:before {
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    width: 45%;
+    padding-right: 10px;
+    text-align: left;
+    white-space: nowrap;
+    font-weight: 400; }
+  .table-responsive-block .table-order td:nth-of-type(1):before {
+    content: "Đơn hàng"; }
+  .table-responsive-block .table-order td:nth-of-type(2):before {
+    content: "Ngày"; }
+  .table-responsive-block .table-order td:nth-of-type(3):before {
+    content: "Địa chỉ"; }
+  .table-responsive-block .table-order td:nth-of-type(4):before {
+    content: "Giá trị"; }
+  .table-responsive-block .table-order td:nth-of-type(5):before {
+    content: "TT Thanh toán"; }
+  .table-responsive-block .table-order td:nth-of-type(6):before {
+    content: "TT Vận chuyển"; }
+  .table-responsive-block #order_details td:nth-of-type(1):before {
+    content: "Sản phẩm"; }
+  .table-responsive-block #order_details td:nth-of-type(2):before {
+    content: "Mã sản phẩm"; }
+  .table-responsive-block #order_details td:nth-of-type(3):before {
+    content: "Giá"; }
+  .table-responsive-block #order_details td:nth-of-type(4):before {
+    content: "Số lượng"; }
+  .table-responsive-block #order_details td:nth-of-type(5):before {
+    content: "Tổng"; }
+  .table-responsive-block #order_details td:nth-of-type(6):before {
+    content: "Tình trạng"; }
+  .table-responsive-block .totalorders td:nth-of-type(1):before {
+    content: "Tạm tính"; }
+  .table-responsive-block .totalorders td:nth-of-type(2):before {
+    content: "Phí vận chuyển"; }
+  .table-responsive-block .totalorders td:nth-of-type(3):before {
+    content: "Tổng tiền"; }
+  .table-responsive-block .totalorders td:nth-of-type(4):before {
+    content: "Số lượng"; }
+  .table-responsive-block .totalorders td:nth-of-type(5):before {
+    content: "Tổng"; }
+  .table-responsive-block .totalorders td:nth-of-type(6):before {
+    content: "Tình trạng"; } }
+
+/*=========Filter===============*/
+@media (max-width: 991px) {
+  .opacity_filter.opacity_filter_true {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99999; }
+  .opacity_menu.open_opacity {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 999999; }
+  .show_open:before {
+    font-size: 16px;
+    line-height: 36px;
+    color: #fff !important;
+    content: "\e622";
+    font-style: normal; }
+  .hide_close:before {
+    font-size: 16px;
+    line-height: 36px;
+    color: #fff !important;
+    content: "\e61a";
+    font-style: normal; }
+  /*filter mobile*/
+  #open-filters {
+    color: #fff;
+    background: #0fb2ef;
+    position: fixed;
+    right: 0;
+    top: 35% !important;
+    padding: 4px 10px;
+    cursor: pointer;
+    border-radius: 5px 0px 0px 5px;
+    z-index: 99999;
+    /* display: none; */
+    font-size: 18px;
+    -webkit-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+    transition: all 0.35s ease; }
+    #open-filters.openf i:before {
+      content: '\f00d'; }
+    #open-filters span {
+      display: none; }
+  .dqdt-sidebar {
+    position: fixed;
+    background: #fff;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 15px;
+    border-left: solid 1px #bbbbbb;
+    overflow: auto;
+    z-index: 100000;
+    visibility: hidden;
+    -webkit-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%); }
+    .dqdt-sidebar.openf {
+      visibility: visible;
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+      transform: translateX(0); } }
+
+@media (min-width: 375px) and (max-width: 991px) {
+  #open-filters.openf {
+    right: 320px; }
+  .dqdt-sidebar {
+    width: 320px; } }
+
+@media (max-width: 374px) {
+  #open-filters.openf {
+    right: 280px; }
+  .dqdt-sidebar {
+    width: 280px; } }
+
+/*========Menu============*/
+@media (max-width: 1199px) {
+  header nav .mega-content {
+    width: 940px; }
+  header nav .mega-content .level1.item {
+    text-align: left; } }
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .search.f-right {
+    margin-right: 50px; } }
+
+@media (max-width: 991px) {
+  header > .container {
+    position: relative; }
+  header .logo a {
+    display: inline-block;
+    /* width: 100%; */
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  header nav .nav-item {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin: 0; }
+    header nav .nav-item .dropdown-menu {
+      display: none !important;
+      position: static;
+      border: none; }
+    header nav .nav-item.open a {
+      background: none !important; }
+    header nav .nav-item.open > .dropdown-menu {
+      display: block !important;
+      margin: 0;
+      padding: 0; }
+  header nav li.menu-line {
+    display: none;
+    border: none; }
+  header nav .nav-item > a {
+    line-height: 20px;
+    padding: 5px 15px 3px; }
+  header nav #nav-mobile .nav-item > .dropdown-menu {
+    padding: 0 0 0 15px;
+    position: static;
+    width: 100%;
+    float: none;
+    border: none;
+    padding-right: 7px; }
+  header nav .nav-item:hover > .dropdown-menu li.open > .dropdown-menu {
+    display: block !important; }
+  .header-main {
+    padding: 10px 0; }
+  #nav {
+    padding-right: 0;
+    display: none;
+    padding-right: 0;
+    padding: 10px 0;
+    border: 1px solid #ebebeb;
+    margin-bottom: 15px; }
+    #nav.open {
+      display: block; }
+    #nav .nav-link > .fa {
+      float: right;
+      line-height: 22px;
+      margin-right: -15px;
+      width: 40px;
+      text-align: center;
+      transform: translateY(-5px);
+      -webkit-transform: translateY(-5px);
+      -moz-transform: translateY(-5px); } }
+
+/*========Header============*/
+@media (max-width: 543px) {
+  .topbar .a-left {
+    display: none; }
+  .topbar ul.list-inline.f-right {
+    float: left !important; }
+  .logo {
+    display: block;
+    font-size: 20px; }
+  .search.f-right {
+    float: none;
+    width: 100%; } }
+
+/*========Footer============*/
+@media (max-width: 420px) {
+  .col-xs-6.footer-header {
+    width: 100%; } }
+
+/*=============Product===========*/
+@media (max-width: 543px) {
+  .product-box .product-thumbnail > a img {
+    height: auto !important; } }
+
+/*=============Collection===========*/
+/*Address*/
+@media (max-width: 375px) {
+  .sodiachi .btn.btn-50 {
+    width: 100%;
+    margin-bottom: 10px; } }
+
+/*Product grrid*/
+@media (max-width: 768px) {
+  .quick-view {
+    display: none !important; } }

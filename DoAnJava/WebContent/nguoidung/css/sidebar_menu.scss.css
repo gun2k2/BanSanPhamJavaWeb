@@ -1,0 +1,85 @@
+/*============================================================================
+1. Mixin
+==============================================================================*/
+/*============================================================================
+#Function
+==============================================================================*/
+.sidebar-menu {
+  width: 100%;
+  float: left;
+  display: block; }
+  .sidebar-menu .sidebar-menu-title {
+    margin-bottom: 0 !important; }
+
+.sidebar-linklists {
+  width: 100%;
+  float: left; }
+  .sidebar-linklists ul {
+    width: 100%;
+    float: left;
+    margin-bottom: 0; }
+    .sidebar-linklists ul li {
+      width: 100%;
+      float: left;
+      display: block;
+      position: relative; }
+      .sidebar-linklists ul li.sidebar-menu-list:before {
+        position: absolute;
+        top: 14px;
+        left: 9px; }
+      .sidebar-linklists ul li.sidebar-menu-list > a:before {
+        content: "";
+        font-size: 0.57143em;
+        display: inline-block;
+        font-family: FontAwesome;
+        position: absolute;
+        left: 0;
+        line-height: 21px; }
+      .sidebar-linklists ul li a {
+        display: block;
+        padding: 5px 30px 5px 0;
+        position: relative; }
+        .sidebar-linklists ul li a.a_lv2 {
+          padding: 5px 30px 5px 15px; }
+          .sidebar-linklists ul li a.a_lv2:before {
+            content: "\f111";
+            position: absolute;
+            font-family: FontAwesome;
+            font-size: 0.35714em;
+            left: 0;
+            top: 13px;
+            color: #2f2f2f; }
+        .sidebar-linklists ul li a.a_lv3 {
+          padding: 5px 15px; }
+          .sidebar-linklists ul li a.a_lv3:before {
+            content: "\f068";
+            color: #2f2f2f;
+            position: absolute;
+            font-family: FontAwesome;
+            font-size: 0.57143em;
+            left: 0;
+            top: 10px; }
+        .sidebar-linklists ul li a label {
+          margin: 0; }
+      .sidebar-linklists ul li:hover > a {
+        color: #fbbf22; }
+      .sidebar-linklists ul li em {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 30px;
+        text-align: center;
+        padding: 11.5px 0;
+        font-size: 0.71429em;
+        cursor: pointer;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+      .sidebar-linklists ul li.active > a {
+        color: #fbbf22; }

@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url('fonts/Quicksand-Regular.ttf') format('woff2'), url('fonts/Quicksand-Regular.ttf') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: 'Quicksand';
+  src: url('fonts/Quicksand-Light.ttf') format('woff2'), url('fonts/Quicksand-Light.ttf') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url('fonts/Quicksand-Medium.ttf') format('woff2'), url('fonts/Quicksand-Medium.ttf') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url('fonts/Quicksand-Bold.ttf') format('woff2'), url('fonts/Quicksand-Bold.ttf') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url('fonts/Quicksand-SemiBold.ttf') format('woff2'), url('fonts/Quicksand-SemiBold.ttf') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: auto;
+}

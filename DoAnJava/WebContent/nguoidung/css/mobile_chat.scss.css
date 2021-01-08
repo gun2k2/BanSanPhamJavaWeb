@@ -1,0 +1,53 @@
+@media (max-width: 991px) and (min-width: 543px) and (max-width: 991px) {
+  footer {
+    margin-bottom: 45px; } }
+
+@media (max-width: 991px) and (max-width: 542px) {
+  footer {
+    margin-bottom: 65px; } }
+
+.mobile_chat {
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  box-shadow: #ebebeb 0 0 20px; }
+
+.chat-item {
+  padding: 5px 10px; }
+  @media (min-width: 543px) {
+    .chat-item a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      float: left; } }
+  @media (max-width: 542px) {
+    .chat-item a {
+      display: block; } }
+  .chat-item .chat-item-image {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media (max-width: 542px) {
+      .chat-item .chat-item-image {
+        width: 100%;
+        float: left; } }
+    @media (min-width: 543px) {
+      .chat-item .chat-item-image {
+        margin-right: 5px; } }
+    .chat-item .chat-item-image img {
+      height: 32px; }
+  .chat-item .chat-item-text {
+    height: 20px;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media (max-width: 542px) {
+      .chat-item .chat-item-text {
+        width: 100%;
+        float: left; } }
